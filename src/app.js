@@ -13,3 +13,7 @@ function hide(){
     nav_list.classList.remove("_Menus-show")
     donut_container.appendChild(donut_img)
 }
+
+function redirect(){
+    nav_list.classList.remove("_Menus-show")
+}
