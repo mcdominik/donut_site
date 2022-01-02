@@ -1,0 +1,272 @@
+
+*,
+*::before,
+*::after {
+  --navbar-color: #ffc100;
+  --body-color: whitesmoke;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+.container {
+  background-color: var(--navbar-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0, .3);
+}
+
+.container .logo {
+  max-width: 250px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.container .logo a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 60px;
+}
+
+.container .logo a img {
+  max-width: 100%;
+  max-height: 60px;
+}
+
+.container .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.container .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.container .navbar ul li a {
+  color: black;
+  text-transform: uppercase;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.container .navbar ul li a:hover {
+  color: #ffffff;
+  background-color: black;
+}
+
+.container .navbar ul .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+}
+
+.container .navbar ul .close span {
+  font-size: 40px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.container .navbar .icon-bar {
+  padding: 18px 8px;
+  width: 50px;
+  height: 60px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container .navbar .icon-bar i {
+  background-color: black;
+  height: 2px;
+}
+
+.container .logo img {
+  cursor: default;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .container .logo {
+    flex: 1;
+  }
+
+  .container .navbar {
+    flex: 0;
+  }
+
+  .container .navbar ul {
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: left .3s;
+  }
+
+  .container .navbar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    height: auto;
+    line-height: normal;
+    color: #555555;
+    text-align: center;
+  }
+
+  .container .navbar ul li a:hover {
+    color: black;
+    background-color: var(--navbar-color);
+  }
+
+  .container .navbar ul .close {
+    display: block;
+  }
+
+  .container .navbar .icon-bar {
+    display: flex;
+  }
+
+  .container .navbar ._Menus-show {
+    left: 0;
+  }
+}
+
+
+body {
+  background-color:whitesmoke;
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.content .main-image {
+  padding-top: 1.5rem;
+  width: 100%;
+  height: auto;
+  animation-name: floating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  from { transform: translate(0, 0px); }
+  65%  { transform: translate(0, 25px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+.content h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* MENU SHEET */
+
+.menu-content{
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: white;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: .3em;
+  border-bottom: 2px solid #ccc;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-img {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-desc {
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-img {
+    height: 7rem;
+    width: auto;
+  }
+}
+
+/* CONTACT SHEET */
+
+.content .about {
+  margin-top: 30%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.content .contact-info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.content h3 {
+  margin-top: 25%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+

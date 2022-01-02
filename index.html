@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>donut factory</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="src/donut_logo3RC.png" alt="logo"></a>
+        </div>
+        <div class="navbar">
+            <div class="icon-bar" onclick="show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="hide()">×</span></li>
+                <li><a href="#">home</a></li>
+                <li><a href="/menu.html">menu</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/contact.html">contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 class="title">Probably the best donuts in the world.</h1>
+        <div id="donut-container">
+            <img id="main-image" class="main-image" src="./donut.png" alt="image">
+        </div>
+    </div>
+
+    <script src="src/app.js"></script>
+</body>
+</html>
