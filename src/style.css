@@ -3,7 +3,8 @@
 *::before,
 *::after {
   /* --navbar-color: #ffc100; */
-  --navbar-color: gray;
+  /* --navbar-color: gray; */
+  --navbar-color: #B19CD8;
   --body-color: whitesmoke;
   box-sizing: border-box;
   font-family: sans-serif;
@@ -189,7 +190,9 @@ body {
   text-align: center;
   margin: auto;
   padding: 2rem;
-  color: #ffc100;
+  /* color: #ffc100; */
+  color: #fffb05;
+
 }
 
 /* MENU SHEET */
