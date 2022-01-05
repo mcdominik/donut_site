@@ -3,7 +3,7 @@
 *::before,
 *::after {
   /* --navbar-color: #ffc100; */
-  --navbar-color: grey;
+  --navbar-color: gray;
   --body-color: whitesmoke;
   box-sizing: border-box;
   font-family: sans-serif;
